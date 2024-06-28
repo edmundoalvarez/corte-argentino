@@ -32,6 +32,8 @@ body {
   background-color: var(--secondary-color);
   color: #333;
   line-height: 1.6;
+  width: 100%;
+  overflow: hidden;
 }
 /* 
 p {
