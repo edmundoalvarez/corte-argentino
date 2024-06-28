@@ -61,7 +61,7 @@
     width: 100%;
     max-width: 380px;
     height: 140px;
-    border: solid 1px green;
+    /* border: solid 1px green; */
     display: flex;
     flex-direction: column;
     align-items: center;
