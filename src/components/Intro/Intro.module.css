@@ -1,0 +1,265 @@
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100vw;
+    background-color: #F7F7F7;
+    /* border: solid 2px red; */
+}
+
+.intro > div {
+    width: 50%;
+    height: 100%;
+    /* border: solid 1px blue; */
+}
+
+.intro .image{
+    overflow: hidden;
+}
+
+.intro .image picture{
+    height: 100%;
+    width: 100%;
+    /* border: solid 1px red; */
+    overflow: hidden;
+}
+
+.intro .image picture img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro .txt {
+    padding: 3%;
+    /* border: solid 1px red; */
+    width: 50%;
+
+}
+
+.intro .txt > div {
+    width: fit-content;
+    /* border: solid 1px blue; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+
+.intro .txt .logo {
+    width: 480px;
+    height: 200px;
+    /* border: solid 1px green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 40px; */
+    overflow: hidden;
+    background-image: url('./images/logo.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.intro .txt .logo h1 {
+    visibility: hidden;
+}
+
+.intro .txt h2{
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 900;
+    color: var(--primary-color);
+    max-width: 600px;
+}
+
+.intro .txt h2 span{
+    color: var(--quaternary-color);
+}
+
+.intro .txt p {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    max-width: 400px;
+}
+
+.intro .txt button {
+    width: 140px;
+    height: 50px;
+    border: none;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+@media (max-width: 1023px) {
+
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: unset;
+        width: 100vw;
+        background-color: #F7F7F7;
+        /* border: solid 2px red; */
+    }
+
+    .intro > div {
+        width: 100%;
+        /* height: 100%; */
+        /* border: solid 1px blue; */
+    }   
+
+
+    .intro .image{
+        overflow: hidden;
+        height: 700px;
+        /* border: solid 1px red; */
+    }
+
+    .intro .image picture{
+        height: 100%;
+        width: 100%;
+        /* border: solid 1px red; */
+        overflow: hidden;
+    }
+
+    .intro .image picture img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .intro .txt {
+        padding: 70px 80px 80px;
+        /* border: solid 1px red; */
+        width: fit-content;
+
+    }
+
+
+    .intro .txt > div {
+        width: fit-content;
+        /* border: solid 1px blue; */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .intro .txt .logo {
+        width: 100%;
+        max-width: 480px;
+        height: 190px;
+        /* border: solid 1px green; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* margin-bottom: 40px; */
+        overflow: hidden;
+        background-image: url('./images/logo.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+
+
+    .intro .txt .logo h1 {
+        visibility: hidden;
+    }
+
+    .intro .txt h2{
+        font-size: 5rem;
+        line-height: 5rem;
+        font-weight: 900;
+        color: var(--primary-color);
+        max-width: 480px;
+    }
+
+    .intro .txt h2 span{
+        color: var(--quaternary-color);
+    }
+
+    .intro .txt p {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        font-weight: 400;
+        color: var(--primary-color);
+        max-width: 400px;
+    }
+
+    .intro .txt button {
+        width: 140px;
+        height: 50px;
+        border: none;
+        background-color: var(--tertiary-color);
+        color: var(--secondary-color);
+        font-size: 1.2rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+}
+
+@media (max-width: 767px){
+    .intro .txt h2, .intro .txt .logo{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .intro .txt {
+        padding: 40px 5vw 80px;
+        /* border: solid 1px red; */
+        width: fit-content;
+
+    }
+
+    .intro .txt .logo{
+        background-size: contain;
+        height: 30vw;
+        width: 100%;
+    }
+
+    .intro .image{
+        /* overflow: hidden; */
+        height: 500px;
+        /* border: solid 1px red; */
+    }
+
+
+    .intro .txt h2{
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        font-weight: 900;
+        color: var(--primary-color);
+        max-width: 480px;
+    }
+
+
+    .intro .txt p {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+        color: var(--primary-color);
+        max-width: 400px;
+    }
+}
+

@@ -1,0 +1,14 @@
+header{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2 {
+    color: var(--quaternary-color);
+    font-size: small;
+    text-transform: uppercase;
+    margin: 16px 0px;
+}

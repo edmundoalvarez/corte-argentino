@@ -1,0 +1,39 @@
+@import 'flag-icons/css/flag-icons.min.css';
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables CSS */
+:root {
+  --primary-color: #3B3A3A;
+  --secondary-color: #F7F7F7;
+  --tertiary-color: #30B0CE;
+  --quaternary-color: #A88D78;
+  --font-family: 'Roboto', sans-serif;
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-large: 18px;
+  --font-size-h1: 2em;
+  --font-size-h2: 1.75em;
+  --font-size-h3: 1.5em;
+  --font-size-h4: 1.25em;
+  --font-size-h5: 1em;
+  --font-size-h6: 0.875em;
+}
+
+/* Estilos globales */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  background-color: var(--secondary-color);
+  color: #333;
+  line-height: 1.6;
+}
+/* 
+p {
+  margin-bottom: 0rem;
+} */
