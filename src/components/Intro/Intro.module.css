@@ -177,7 +177,7 @@
         justify-content: center;
         /* margin-bottom: 40px; */
         overflow: hidden;
-        background-image: url('./images/logo.jpeg');
+        background-image: url('/images/logo.jpeg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
