@@ -18,7 +18,7 @@ function FindUs() {
     };
 
     return (
-        <section className={styles['find-us']}>
+        <section className={styles['find-us']} id='findUs'>
             <h2>Where you can <span>find us?</span></h2>
             <div>
                 <div className={styles['border-left']}></div>
@@ -130,21 +130,21 @@ function FindUs() {
                                     <span className="fi fi-us"></span>
                                 </div>
                                 <h3>USA</h3>
-                                <button>Visit us</button>
+                                <button onClick={()=>handleClick('https://www.corteargentinousa.com/')}>Visit us</button>
                             </div>
                             <div className={`${styles.svC} ${hovered === 'sv' ? styles.scale : ''}`}>
                                 <div className={styles.flag}>
                                     <span className="fi fi-sv"></span>
                                 </div>
                                 <h3>El Salvador</h3>
-                                <button>Visit us</button>
+                                <button onClick={()=>handleClick('#')}>Visit us</button>
                             </div>
                             <div className={`${styles.paC} ${hovered === 'pa' ? styles.scale : ''}`}>
                                 <div className={styles.flag}>
                                     <span className="fi fi-pa"></span>
                                 </div>
                                 <h3>Panamá</h3>
-                                <button>Visit us</button>
+                                <button onClick={()=>handleClick('https://corteargentinopty.com/')} >Visit us</button>
                             </div>
                         </div>
                     </div>
