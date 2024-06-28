@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 80vh;
+    min-height: 800px;
     width: 100vw;
     background-color: #F7F7F7;
     /* border: solid 2px red; */
@@ -56,8 +57,9 @@
 }
 
 .intro .txt .logo {
-    width: 480px;
-    height: 200px;
+    width: 100%;
+    max-width: 400px;
+    height: 180px;
     /* border: solid 1px green; */
     display: flex;
     flex-direction: column;
@@ -68,6 +70,7 @@
     background-image: url('/images/logo.jpg');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 
 }
 
@@ -76,11 +79,11 @@
 }
 
 .intro .txt h2{
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 4rem;
+    line-height: 4rem;
     font-weight: 900;
     color: var(--primary-color);
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .intro .txt h2 span{
@@ -88,11 +91,11 @@
 }
 
 .intro .txt p {
-    font-size: 1.4rem;
-    line-height: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
     font-weight: 400;
     color: var(--primary-color);
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .intro .txt button {
@@ -168,8 +171,8 @@
 
     .intro .txt .logo {
         width: 100%;
-        max-width: 480px;
-        height: 190px;
+        max-width: 600px;
+        height: 230px;
         /* border: solid 1px green; */
         display: flex;
         flex-direction: column;
@@ -177,10 +180,11 @@
         justify-content: center;
         /* margin-bottom: 40px; */
         overflow: hidden;
-        background-image: url('/images/logo.jpeg');
-        background-size: cover;
+        background-image: url('/images/logo.jpg');
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+        /* border: solid red; */
 
     }
 
@@ -191,8 +195,8 @@
     }
 
     .intro .txt h2{
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 4rem;
+        line-height: 4rem;
         font-weight: 900;
         color: var(--primary-color);
         max-width: 480px;
@@ -238,9 +242,23 @@
     }
 
     .intro .txt .logo{
+        max-width: 400px;
+        /* border: solid 1px green; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* margin-bottom: 40px; */
+        overflow: hidden;
+        background-image: url('/images/logo.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        /* border: solid red; */
+
         background-size: contain;
-        height: 30vw;
-        width: 100%;
+        height: 45vw;
+        width: 90%;
+        margin: auto;
     }
 
     .intro .image{
