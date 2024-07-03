@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import styles from './FindUs.module.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function FindUs() {
+
+    const [hovered, setHovered] = useState('');
 
     const handleClick = (web) => {
         window.location.href = web;
     };
-
-    const [hovered, setHovered] = useState('');
 
     const handleMouseEnter = (id) => {
         setHovered(id);
@@ -16,6 +18,11 @@ function FindUs() {
     const handleMouseLeave = () => {
         setHovered('');
     };
+
+    const handleSendEmail = () => {
+        toast.success("Email copied successfully!");
+    };
+
 
     return (
         <section className={styles['find-us']} id='findUs'>
@@ -130,21 +137,36 @@ function FindUs() {
                                     <span className="fi fi-us"></span>
                                 </div>
                                 <h3>USA</h3>
-                                <button onClick={()=>handleClick('https://www.corteargentinousa.com/')}>Visit us</button>
+                                <p className={styles.email}>ek@corteargentinoinc.com</p>
+                                <div className={styles.buttons}>
+                                    {/* <button onClick={handleSendEmail} className={styles['email-button']}>Send Email</button> */}
+                                    {/* <a className={styles['email-button']} href="mailto:ek@corteargentinoinc.com?subject=Contacting%20you%20from%20the%20landing%20page&body=How%20can%20we%20help%20you?">Send Email</a> */}
+                                    <button onClick={()=>handleClick('https://www.corteargentinousa.com/')}>Visit us</button>
+                                </div>
                             </div>
                             <div className={`${styles.svC} ${hovered === 'sv' ? styles.scale : ''}`}>
                                 <div className={styles.flag}>
                                     <span className="fi fi-sv"></span>
                                 </div>
                                 <h3>El Salvador</h3>
-                                <button onClick={()=>handleClick('#')}>Visit us</button>
+                                <p className={styles.email}>gerencia@corteargentinoinc.com</p>
+                                <div className={styles.buttons}>
+                                    {/* <button className={styles['email-button']}>Send Email</button> */}
+                                    {/* <a className={styles['email-button']} href="#">Send Email</a> */}
+                                    <button onClick={()=>handleClick('#')}>Visit us</button>
+                                </div>
                             </div>
                             <div className={`${styles.paC} ${hovered === 'pa' ? styles.scale : ''}`}>
                                 <div className={styles.flag}>
                                     <span className="fi fi-pa"></span>
                                 </div>
                                 <h3>Panamá</h3>
-                                <button onClick={()=>handleClick('https://corteargentinopty.com/')} >Visit us</button>
+                                <p className={styles.email}>gerencia@corteargentinoinc.com</p>
+                                <div className={styles.buttons}>
+                                    {/* <button className={styles['email-button']}>Send Email</button> */}
+                                    {/* <a className={styles['email-button']} href="#">Send Email</a> */}
+                                    <button onClick={()=>handleClick('https://corteargentinopty.com/')} >Visit us</button>
+                                </div>
                             </div>
                         </div>
                     </div>
