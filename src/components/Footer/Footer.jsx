@@ -7,7 +7,7 @@ function Footer() {
                 <span></span>
             </div>
             <div className={styles.copyright}>
-                <p>© 2024 <b>Corte Argentino</b></p>
+                <p>© 2015 - 2024 <b>Corte Argentino</b></p>
             </div>
             <div className={styles.designed}>
                 <p>Designed by <a target='_blank' href='https://www.edmundoalvarez.com.ar'>Edmundo Alvarez</a></p>
