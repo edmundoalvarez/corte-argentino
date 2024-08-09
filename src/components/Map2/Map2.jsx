@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-const Map = () => {
+const Map2 = () => {
   const [geoData, setGeoData] = useState(null);
 
   useEffect(() => {
@@ -70,4 +70,4 @@ const Map = () => {
   );
 };
 
-export default Map;
+export default Map2;

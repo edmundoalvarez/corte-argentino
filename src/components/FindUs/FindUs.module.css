@@ -24,7 +24,10 @@
     /* border: solid 1px blue; */
     margin: 2% auto;
     gap: 0px;
-    max-width: 1000px;
+    width: 80%;
+    min-width: 1150px;
+    max-width: 1600px;
+    /* min-width: 1024px; */
 }
 
 .interactive {
@@ -32,16 +35,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    align-content: center;
     margin-top: 20px;
     flex-wrap: wrap;
     /* border: solid 1px red; */
     margin: auto;
-    gap: 80px;
+    gap: 120px;
+    height: fit-content;
+    width: 90%;
 }
 
 .interactive .map {
     width: fit-content;
-    height: 700px;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +56,8 @@
 
 .interactive .map >div {
     width: 50vw;
-    max-width: 550px;
+    min-width: 720px;
+    max-width: 720px;
 }
 
 .cls-1 { 
@@ -81,18 +88,19 @@
 .interactive .countries > div {
     margin: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     /* border: solid 1px white; */
-    gap: 30px;
-    padding: 100px 0px;
+    gap: 20px;
+    padding: 0px 0px;
 }
 
 .interactive .countries > div > div {
     /* width: 250px;
     height: 200px; */
-    width: 270px;
+    width: 235px;
+    height: 235px;
     border: solid 3px var(--quaternary-color);
     background-color: #262626;
     display: flex;
@@ -131,12 +139,14 @@
 }
 
 .interactive .countries > div > div h3 {
-    font-size: 1.8rem;
-    line-height: 1.8rem;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
 }
 
 .interactive .countries > div > div .email {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
 }
 
 .buttons {
@@ -183,8 +193,8 @@
 
 .border-right, .border-left {
     content: "";
-    width: 30px;
-    height: 960px;
+    width: 15px;
+    height: 1400px;
     display: inline-block;
     border: solid 3px var(--quaternary-color);
     position: relative;
@@ -197,9 +207,17 @@
     border-right: none;
 }
 
+@media (max-width: 1180px) and (min-width: 1024px) {
 
+    .find-us > div:first-of-type {
+        width: 70%;
+        min-width: 900px;
+    }
+    
 
-@media (max-width: 1023px) {
+    .border-right, .border-left {
+        height: 1600px;
+    }
 
     .find-us > div:first-of-type {
         display: flex;
@@ -208,9 +226,36 @@
         align-items: center;
         flex-wrap: wrap;
         /* border: solid 1px blue; */
-        margin: 4%;
+        margin: 2% auto;
         gap: 0px;
-        max-width: unset;
+        width: 70%;
+        max-width: 1600px;
+        /* min-width: 1024px; */
+    }
+    
+
+    .interactive .countries > div {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* border: solid 1px white; */
+        gap: 20px;
+        padding: 0px 0px;
+        flex-wrap: wrap;
+        width: 600px;
+    }
+
+}
+
+
+
+@media (max-width: 1023px) {
+
+    .find-us > div:first-of-type {
+        width: 80%;
+        min-width:unset;
     }
     
 
@@ -228,10 +273,10 @@
 
     .border-right, .border-left {
         content: "";
-        width: 40px;
+        width: 15px;
         /* height: 1700px; */
-        height: 230vw;
-        min-height: 1200px;
+        height: 1400px;
+        min-height: unset;
         display: inline-block;
         border: solid 3px var(--quaternary-color);
         position: relative;
@@ -255,40 +300,25 @@
     }
 
     .interactive .map >div {
-        width: 70vw;
+        width: 600px;
         max-width: unset;
+        min-width: unset;
+        /* border: solid 1px red; */
+        /* max-width: unset; */
     }
 
 
     .interactive .countries > div {
         margin: auto;
         display: flex;
-        flex-direction: flex;
-        justify-content: flex-start;
-        align-items: center;
-        /* border: solid 1px white; */
-        gap: 30px;
-        padding: 0px 0px;
-    }
-
-    .interactive .countries > div > div {
-        width: 40vw;
-        min-width: 300px;
-        max-width: 400px;
-        height: 40vw;
-        min-height: 300px;
-        max-height: 400px;
-        border: solid 3px var(--quaternary-color);
-        background-color: #262626;
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 30px;
-        color: var(--secondary-color);
-        transition: all 0.3s ease-in-out;
-        box-shadow: 0px 0px 20px 0px  rgba(0,0,0,0.1);
-
+        /* border: solid 1px white; */
+        gap: 20px;
+        padding: 0px 0px;
+        flex-wrap: wrap;
+        width: 600px;
     }
 
 }
@@ -308,7 +338,7 @@
         align-items: center;
         flex-wrap: wrap;
         /* border: solid 1px blue; */
-        margin: 0%;
+        /* margin: 0%; */
         gap: 0px;
     }
 
@@ -326,11 +356,13 @@
 
     .border-right, .border-left {
         content: "";
-        width: 6vw;
-        height: 250vw;
+        width: 15px;
+        height: 1800px;
+        min-height: unset;
+        max-height: unset;
         /* min-height: 1440px; */
         /* min-height: 1280px; */
-        max-height: 1500px;
+        /* max-height: 1500px; */
         display: inline-block;
         border: solid 3px var(--quaternary-color);
         position: relative;
@@ -368,8 +400,8 @@
     }
 
     .interactive .map >div {
-        width: 75vw;
-        max-width: unset;
+        width: 450px;
+        min-width: unset;
     }
 
 
@@ -427,21 +459,72 @@
     }
 }
 
-@media (min-width: 400px) and (max-width:550px){
+@media (max-width: 650px) {
+    .interactive .map >div {
+        width: 380px;
+        min-width: unset;
+    }
     .border-right, .border-left {
-        width: 6vw;
-        height: 310vw;
-        min-height: 600px;
-        max-height: 1400px;
-
+        width: 15px;
+        height: 1700px;
+        min-height: unset;
+        max-height: unset;
 
     }
+
+    .interactive .countries > div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 400px) and (max-width:550px){
+
+    .interactive .map >div {
+        width: 320px;
+        min-width: unset;
+    }
+
+    .border-right, .border-left {
+        width: 15px;
+        height: 1650px;
+        min-height: unset;
+        max-height: unset;
+
+    }
+
+    .find-us > div:first-of-type {
+        width: 95%;
+        min-width: unset;
+        max-width: unset;
+        /* min-width: 1024px; */
+        /* border: solid red 1px; */
+    }
+
+    .interactive .countries > div {
+        width: 100%;
+    }
+
 } 
 @media (min-width: 350px) and (max-width:399px){
-    .border-right, .border-left {
-        width: 6vw;
-        height: 320vw;
-        min-height: 600px;
 
+    .interactive .map >div {
+        width: 300px;
+        min-width: unset;
+    }
+
+    .border-right, .border-left {
+        width: 12px;
+        height: 1650px;
+        min-height: unset;
+        max-height: unset;
+
+    }
+
+    .find-us > div:first-of-type {
+        width: 95%;
+        min-width: unset;
+        max-width: unset;
+        /* min-width: 1024px; */
+        /* border: solid red 1px; */
     }
 } 
